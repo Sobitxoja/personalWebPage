@@ -1,0 +1,47 @@
+body{
+  background-image: url("icons/home.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+h2{
+
+  font-size: 100px;
+  
+}
+
+p{
+  font-size: 70px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 55%;
+  text-align: center;
+  flex-direction: column;
+  border: 2px solid gray;
+  color: white;
+  box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.8);
+  min-height: 80vh;
+  margin-top: 250px;
+  backdrop-filter: blur(20px);
+
+}
+
+@media (min-width: 300px) {
+  
+  .center{
+    font-size: 1px;
+    width: 100%;
+  }
+  
+
+}
+
+
+
+

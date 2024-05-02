@@ -1,0 +1,107 @@
+/* Gallery */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+  padding-top: 100px;
+}
+
+@media screen and (max-width: 950px) {
+  .gallery-grid {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
+.gallery-item {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  text-align: center;
+  padding-top: 5px;
+  text-decoration: none;
+
+}
+
+
+
+/* Carusel */
+
+.carousel-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  padding-bottom: 10px;
+
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+
+}
+
+.slide.active {
+  display: flex;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.indicator {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  display: inline-block;
+  margin: 0 2px;
+  border-radius: 50%;
+}
+
+.indicator.active {
+  background-color: #666;
+} 

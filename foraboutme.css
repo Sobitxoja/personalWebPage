@@ -1,0 +1,78 @@
+body {
+  background-image: url("icons/959fb1f51bc1026ace27acede55e1bc8.gif");
+  background-attachment: fixed;
+  size: 100% 100%;
+  background-repeat: repeat;
+}
+
+p{
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-image {
+  position: relative;
+  text-align: center;
+  padding-top: 115px;
+}
+
+.my-image img {
+  margin: 0 auto;
+  width: 45%;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+.my-image img:hover + .my-name {
+  display: none;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.grid-container img{
+  display: none;
+  margin-left: 70px ;
+}
+
+.last-wish{
+  display: none;
+}
+
+.my-name {
+  position: absolute;
+  color: darkgray;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8vw;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.second-body{
+  color: white;
+  text-align: center;
+  margin: auto;
+  backdrop-filter: blur(3px);
+  width: 50%;
+}
+.second-body p{
+  text-align: left;
+  padding: 15px;
+}
+.witcher, .witcher1{
+  width: 55%;
+}
