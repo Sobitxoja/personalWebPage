@@ -20,6 +20,8 @@ p{
   position: relative;
   text-align: center;
   padding-top: 115px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .my-image img {
